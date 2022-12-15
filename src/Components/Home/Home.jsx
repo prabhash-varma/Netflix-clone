@@ -4,6 +4,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { BiPlay } from "react-icons/bi"
 import { AiOutlinePlus } from "react-icons/ai"
+import Header from "../Header/Header";
 
 const apiKey = "7e5122f42b3d47b2f9c1deaf4e1d2214";
 const url = "https://api.themoviedb.org/3";
@@ -77,6 +78,7 @@ const Home = () => {
 
     return (
         <section className="home">
+            <Header />
             <div
                 className="banner"
                 style={{
@@ -101,7 +103,7 @@ const Home = () => {
 
             <div className="genreBox">
                 {genre.map((item) => (
-                    <Link key={item.id} to={`/genre/${item.id}`}>
+                    <Link key={item.id} to="/Netflix-clone">
                         {item.name}
                     </Link>
                 ))}
