@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Netflix-clone/" element={<Home />} />
       </Routes>
     </Router>
   );
